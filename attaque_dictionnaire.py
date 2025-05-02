@@ -17,7 +17,7 @@ def importer_dictionnaire(fichier):
     try:
         with open(fichier, 'r') as file: # Ouvre le fichier en mode lecture
             dictionnaire = [line.strip() for line in file.readlines()] # Lit toutes les lignes du fichier, enlève les espaces sauts de ligne et
-                                                                       #stocke le tout dans un doctionnaire
+                                                                       #stocke le tout dans un dictionnaire
         print(f"Dictionnaire importé avec {len(dictionnaire)} mots.") # Test pour confirmé le dictionnaire a été chargé avec succès
         return dictionnaire # renvoie la liste de mots
     except FileNotFoundError:
